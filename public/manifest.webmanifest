@@ -1,0 +1,17 @@
+{
+  "name": "Kundalik Premium",
+  "short_name": "Kundalik",
+  "description": "Luxury productivity planner for premium daily flow, rituals, and insights.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#09070f",
+  "theme_color": "#7c3aed",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ]
+}
