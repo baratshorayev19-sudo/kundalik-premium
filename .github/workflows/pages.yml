@@ -21,10 +21,8 @@ jobs:
           node-version: '20'
       - run: npm ci
       - run: npm run build
-      - uses: peaceiris/actions-gh-pages@v4
+      - uses: actions/configure-pages@v4
+      - uses: actions/upload-pages-artifact@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: gh-pages
-          user_name: github-actions
-          user_email: github-actions@github.com
+          path: ./dist
+      - uses: actions/deploy-pages@v1
